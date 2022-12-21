@@ -1,0 +1,81 @@
+@mixin font_regular {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin font_bold {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin heading_large {
+    @include font_bold;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+    }
+
+    @media(max-width:$breakpoint-mobile-max) {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+}
+
+@mixin heading_medium {
+    @include font_bold;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        letter-spacing: .2rem;
+    }
+
+    @media(max-width:$breakpoint-mobile-max) {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: .187rem;
+    }
+
+}
+
+@mixin rating {
+    @include font_bold;
+
+    /* identical to box height, or 150% */
+    letter-spacing: .02rem;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    @media(max-width:$breakpoint-mobile-max) {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}
+
+@mixin body {
+    @include font_regular;
+
+    @media(min-width:$breakpoint-desktop-min) {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
+    @media(max-width:$breakpoint-mobile-max) {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+}
+
+@mixin img_responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}

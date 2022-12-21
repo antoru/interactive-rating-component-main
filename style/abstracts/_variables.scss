@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+// colors
+
+$darkBlue: #262E38;
+$lightGrey: #969FAD;
+$mediumGrey: #7C8798;
+$orange: #FC7614;
+$veryDarkBlue: #131518;
+$blackGradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+
+///breakpoint
+$breakpoint-desktop-min: 481px;
+$breakpoint-mobile-max: 480px;
+
+// @media(min-width:$breakpoint-desktop-min){}
+// @media(max-width:$breakpoint-mobile-max){}
